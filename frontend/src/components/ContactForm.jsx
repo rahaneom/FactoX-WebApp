@@ -31,7 +31,7 @@ const ContactForm = () => {
     if (validateInput()) {
       try {
         const res = await axios.post(
-          "https://factox-webapp.onrender.com",
+          "https://factox-webapp.onrender.com/api/contact",
           formData
         );
         if (res.status === 201) {
